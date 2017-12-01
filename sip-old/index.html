@@ -27,7 +27,7 @@
 <!-- header section -->
 <section class="banner" role="banner">
   <header id="header">
-    <div class="header-content clearfix"><a class="logo" href="#myCarousel""><img src="images/sip.png" alt="SIP"></a>
+    <div class="header-content clearfix"><a class="logo"><img src="images/sip.png" alt="SIP"></a>
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
           
@@ -41,52 +41,56 @@
       <a href="#" class="nav-toggle">Menu<span></span></a> </div>
   </header>
   <!-- banner text -->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="images/cs/1.jpg" alt="SIP1">
-      <!-- <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>The atmosphere in New York is lorem ipsum.</p>
-      </div>  -->
-    </div>
-
-    <div class="item">
-      <img src="images/cs/2.jpg" alt="SIP2">
-      <!-- <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago - A night we won't forget.</p>
-      </div>  -->
-    </div>
-
-    <div class="item">
-      <img src="images/cs/3.jpg" alt="SIP3">
-      <!-- <div class="carousel-caption">
-        <h3>LA</h3>
-        <p>Even though the traffic was a mess, we had the best time.</p>
-      </div> --> 
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-      <!-- banner text --> 
+  <div class="masthead">
+      <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#bs-carousel" data-slide-to="1"></li>
+          <li data-target="#bs-carousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item slides active">
+            <div class="slide-1"></div>
+              <div class="hero">
+                <hgroup>
+                  <h1>We are creative</h1>
+                  <h3>Get start your next awesome project</h3>
+                </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">
+                  See all features
+                </button>
+              </div>
+            </div>
+          <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="hero">        
+              <hgroup>
+                <h1>We are smart</h1>        
+                <h3>Get start your next awesome project</h3>
+              </hgroup>       
+              <button class="btn btn-hero btn-lg" role="button">
+                See all features
+              </button>
+            </div>
+          </div>
+          <div class="item slides">
+            <div class="slide-3"></div>
+              <div class="hero">        
+                <hgroup>
+                  <h1>We are amazing</h1>        
+                  <h3>Get start your next awesome project</h3>
+                </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">
+                  See all features
+                </button>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div> 
     </div>
   </div>
 </section><!-- header section --> 
@@ -115,10 +119,10 @@
     </div>
 
     <!-- News -->
-    <div class="container-fluid" id="news" style="padding-top: 30px; padding-bottom: 50px;">
+    <div class="container-fluid" id="news" style="padding-top: 20px; padding-bottom: 50px;">
       <div class="col-xs-12">
-        <h1 class="text-center" style="font-size: 4.5em; font-weight: 700; padding-bottom: 20px;">NEWS UPDATE</h1>
-        <div class="carousel slide" id="myCarousel">
+        <h1 class="text-center" style="font-size: 4.5em; font-weight: 700; padding-bottom: 30px;">NEWS UPDATE</h1>
+        <div class="carousel slide" id="myCarousel2">
           <div class="carousel-inner">
             <div class="item active">
               <ul class="thumbnails">
@@ -172,6 +176,7 @@
                 </li>
               </ul>
             </div><!-- /Slide1 --> 
+            
             <div class="item">
               <ul class="thumbnails">
                 <li class="col-sm-3">
@@ -224,6 +229,7 @@
                 </li>
               </ul>
             </div><!-- /Slide2 --> 
+            
             <div class="item">
               <ul class="thumbnails">
                 <li class="col-sm-3"> 
@@ -280,8 +286,8 @@
         
           <nav>
             <ul class="control-box pager" style="padding-top: 20px;">
-              <li><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
-              <li><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></li>
+              <li><a data-slide="prev" href="#myCarousel2" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
+              <li><a data-slide="next" href="#myCarousel2" class=""><i class="glyphicon glyphicon-chevron-right"></i></li>
             </ul>
           </nav>
           <!-- /.control-box -->   
@@ -345,26 +351,17 @@
   <div class="footer-top section">
     <div class="container">
       <div class="row">
-        <div class="footer-col col-md-6">
+        <div class="footer-col col-md-6">      
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1667.7137038768083!2d106.43809984504357!3d-6.195706881218132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4203d662439fe3%3A0xbf2c8fd3b09dbcd1!2sPT.+Sanchem+Industrial+Pertiwi!5e0!3m2!1sen!2sid!4v1507992795441" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="footer-col col-md-4">
           <h5>Our Office Location</h5>
           <p>Jl. Raya Tobat No. 68, Balaraja, Tangerang, Indonesia.<br>
             (021) 2950-8255<br>
            sip@sanchem.co.id</p>
           <p>Copyright © 2017 MarkazCodeR. All Rights Reserved.</p>
         </div>
-        <div class="footer-col col-md-3">
-          <h5>Services We Offer</h5>
-          <p>
-          <ul>
-            <li><a href="#">Adhesive</a></li>
-            <li><a href="#">Ink</a></li>
-            <li><a href="#">Paint</a></li>
-            <li><a href="#">Coating</a></li>
-            <li><a href="#">Ink Sublimation</a></li>
-          </ul>
-          </p>
-        </div>
-        <div class="footer-col col-md-3">
+        <div class="footer-col col-md-2">
           <h5>Share with Love</h5>
           <ul class="footer-share">
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>

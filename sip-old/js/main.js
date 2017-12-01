@@ -3,10 +3,10 @@ $(document).ready(function() {
 	$(window).on('scroll', function() {
 		var scroll = $(window).scrollTop();
 
-		if (scroll >= 50) {
-			$('#header').addClass('fixed');
+		if (scroll >= 60) {
+			$('#myPage').addClass('fixed');
 		} else {
-			$('#header').removeClass('fixed');
+			$('#myPage').removeClass('fixed');
 		}
 	});
 
@@ -93,7 +93,68 @@ $(document).ready(function(){
 
 // Carousel Auto-Cycle
   $(document).ready(function() {
-    $('.carousel').carousel({
+    $('.carousel2').carousel2({
       interval: 6000
     })
   });
+
+
+
+//header carousel
+  [2:00 AM, 12/2/2017] SI A Hotib: $(document).ready(function()
+{
+	
+	// Closes the sidebar menu on menu-close button click event
+	$("#menu-close").click(function(e)							//declare the element event ...'(e)' = event (shorthand)
+	{
+																// - will not work otherwise")
+		$("#sidebar-wrapper").toggleClass("active");			//instead on click event toggle active CSS element
+		e.preventDefault(); 									//prevent the default action ("Do not remove as the code
+		
+		/*!
+		======================= Notes ===============================
+		* see: .sidebar-wrapper.active in: style.css
+		==================== END Notes ==============================
+		*/
+	});															//Close 'function()'
+
+	// Open the Sidebar-wrapper on Hover
+	$("#menu-toggle").hover(function(e)							//declare the element event ...'(e)' = event (shorthand)
+	{
+		$("#sidebar-wrapper").toggleClass("active",true);		//instead on click event toggle active CSS element
+		e.preventDefault();										//prevent the default action ("Do not remove as the code
+	});
+
+	$("#menu-toggle").bind('click',function(e)					//declare the element event ...'(e)' = event (shorthand)
+	{
+		$("#sidebar-wrapper").toggleClass("active",true);		//instead on click event toggle active CSS element
+		e.preventDefault();										//prevent the default action ("Do not remove as the code
+	});															//Close 'function()'
+
+	$('#sidebar-wrapper').mouseleave(function(e)				//declare the jQuery: mouseleave() event 
+																// - see: ('//api.jquery.com/mouseleave/' for details)
+	{
+		/*! .toggleClass( className, state ) */
+		$('#sidebar-wrapper').toggleClass('active',false);		/* toggleClass: Add or remove one or more classes from each element
+																in the set of matched elements, depending on either the class's
+																presence or the value of the state argument */
+		e.stopPropagation();									//Prevents the event from bubbling up the DOM tree
+																// - see: ('//api.jquery.com/event.stopPropagation/' for details)
+																
+		e.preventDefault();										// Prevent the default action of the event will not be triggered
+																// - see: ('//api.jquery.com/event.preventDefault/' for details)
+	});
+});
+// Closes the sidebar menu on menu-close button click event
+$("#menu-close").click(function(e)							//declare the element event ...'(e)' = event (shorthand)
+{
+															// - will not work otherwise")
+	$("#sidebar-wrapper").toggleClass("active");			//instead on click event toggle active CSS element
+	e.preventDefault(); 									//prevent the default action ("Do not remove as the code
+	
+	/*!
+	======================= Notes ===============================
+	* see: .sidebar-wrapper.active in: style.css
+	==================== END Notes ==============================
+	*/
+});
