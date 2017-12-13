@@ -12,15 +12,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sanchem Industrial Pertiwi</title>
   <link rel="icon" href="img/logosip.png" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/flexslider.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/font-icon.css">
-  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- <link rel="stylesheet" href="css/font-icon.css">
+  <link rel="stylesheet" href="css/animate.min.css"> -->
+  <!-- JS FILES --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="js/main.js"></script> 
+<script type="text/javascript" src="js/jquery.contact.js"></script>
 </head>
 
 <body id="myPage">
@@ -100,28 +110,103 @@
       <h1 class="text-center" style="font-size: 4.5em; font-weight: 700; padding-bottom: 20px;">SPOTLIGHT</h1>
       <div class="row" id="profile"> <!-- picture -->
         <div class="col-sm-6" style="padding-bottom: 30px;">
-          <img class="img-responsive" src="img/4.png" />
+          <img class="img-responsive" src="img/pabrik.jpg" />
           <hgroup id="about">
             <h2>ABOUT SANCHEM</h2>
             <h4>OUR ROOTS AND OUR WAY AHEADS</h4>
           </hgroup>
-          <h5>Read More</h5>
+          <a class="btn btn-mini" href="#aboutModal1" class="about-link" data-toggle="modal">» Read More</a>
         </div>
         <div class="col-sm-6">
-          <img class="img-responsive" src="img/5.png" />
+          <img class="img-responsive" src="img/5.jpg" />
           <hgroup id="product">
-            <h2>LOREM IPSUM</h2>
+            <h2>NEWS</h2>
             <h4>DOLORE SIT AMET</h4>
           </hgroup>
-          <h5>Read More</h5>
+          <a class="btn btn-mini" href="#aboutModal2" class="about-link" data-toggle="modal">» Read More</a>
         </div>
       </div>
+    </div>
+    <!-- About Modals -->
+    <div class="about-modal modal fade" id="aboutModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="http://placehold.it/360x240" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-modal modal fade" id="aboutModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="http://placehold.it/360x240" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- News -->
     <div class="container-fluid" id="news" style="padding-top: 20px; padding-bottom: 50px;">
       <div class="col-xs-12">
-        <h1 class="text-center" style="font-size: 4.5em; font-weight: 700; padding-bottom: 30px;">NEWS UPDATE</h1>
+        <h1 class="text-center" style="font-size: 4.5em; font-weight: 700; padding-bottom: 30px;">PRODUCT</h1>
         <div class="carousel slide" id="myCarousel2">
           <div class="carousel-inner">
             <div class="item active">
@@ -385,17 +470,7 @@
 
 </script>
 <!-- Footer section --> 
-<!-- JS FILES --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.flexslider-min.js"></script> 
-<script src="js/jquery.fancybox.pack.js"></script> 
-<script src="js/retina.min.js"></script> 
-<script src="js/modernizr.js"></script> 
-<script src="js/main.js"></script> 
-<script type="text/javascript" src="js/jquery.contact.js"></script>
+
 
 </body>
 </html>
